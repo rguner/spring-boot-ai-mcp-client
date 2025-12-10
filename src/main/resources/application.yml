@@ -1,0 +1,32 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: spring-boot-ai-mcp-client
+  ai:
+    openai:
+      api-key: lm-studio
+      chat:
+        base-url: http://localhost:1234
+        completions-path: /v1/chat/completions
+        options:
+          model: meta-llama-3.1-8b-instruct
+    mcp:
+      client:
+        stdio:
+          connections:
+            filesystem:
+              command: npx.cmd
+              args:
+                - "@modelcontextprotocol/server-filesystem"
+                - "D:\\Dev\\workspace\\mcp\\server-filesystem-folder"
+                - "D:\\Dev\\IdeaProjects\\AIExperiments"
+
+ai:
+  http:
+    connect-timeout-ms: 5000
+    response-timeout-ms: 60000
+    read-timeout-ms: 60000
+    write-timeout-ms: 60000
+    max-in-memory-size: 10485760
