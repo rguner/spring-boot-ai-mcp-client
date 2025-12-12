@@ -1,10 +1,10 @@
-package com.example.springbootaiexperiment1;
+package com.example.mcpclient;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SpringBootAiExperiment1ApplicationTests {
+class SpringBootAiMcpClientTests {
 
 	@Test
 	void contextLoads() {

@@ -6,7 +6,7 @@ plugins {
 
 group = 'com.example'
 version = '0.0.1-SNAPSHOT'
-description = 'spring-boot-ai-experiment1'
+description = 'spring-boot-ai-mcp-client'
 
 java {
     toolchain {
